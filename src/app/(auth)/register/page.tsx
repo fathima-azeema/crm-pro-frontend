@@ -35,7 +35,7 @@ export default function RegisterPage() {
     try {
       await registerUser(values);
       toast.success("Account created");
-      router.push("/dashboard");
+      router.push("/");   // ✅ Changed from "/dashboard" to "/"
     } catch (err: any) {
       toast.error(err.response?.data?.message || "Registration failed");
     }
@@ -94,4 +94,4 @@ export default function RegisterPage() {
       </form>
     </Card>
   );
-} 
+}

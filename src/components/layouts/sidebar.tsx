@@ -67,7 +67,7 @@ export function Sidebar() {
       <div className="p-4 flex items-center justify-between border-b">
         <div className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-white font-bold text-sm">CP</span>
+            <span className="text-black font-bold text-sm">CP</span>
           </div>
           {!collapsed && <span className="text-xl font-bold">CRM Pro</span>}
         </div>
