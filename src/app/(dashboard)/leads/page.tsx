@@ -69,7 +69,7 @@ function AnimatedCounter({ value }: { value: number }) {
 
 // ── Tiny Sparkline ──
 function Sparkline({ data, color }: { data: number[]; color: string }) {
-  const chartData = data.map((val, i) => ({ val }));
+  const chartData = data.map((val) => ({ val }));
   return (
     <ResponsiveContainer width="100%" height={40}>
       <LineChart data={chartData}>
@@ -189,7 +189,7 @@ export default function DashboardPage() {
     customerGrowth = [],
   } = dashData || {};
 
-  // Demo data for sparklines (you can replace with real later)
+  // Demo data for sparklines
   const stats = [
     {
       title: "Total Customers",
@@ -258,14 +258,16 @@ export default function DashboardPage() {
           { name: "Won", value: 1 },
         ];
 
-  // Recent activities (combine recent customers, leads, and tasks)
+  // Recent activities
   const activities = [
     ...recentCustomers.map((c: any) => ({
       type: "customer",
       text: `${c.name} added as customer`,
       time: c.created_at,
     })),
-  ].sort((a, b) => new Date(b.time).getTime() - new Date(a.time).getTime()).slice(0, 5);
+  ]
+    .sort((a, b) => new Date(b.time).getTime() - new Date(a.time).getTime())
+    .slice(0, 5);
 
   return (
     <motion.div
