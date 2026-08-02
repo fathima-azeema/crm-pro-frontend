@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CRM Pro – Full‑Stack Customer Relationship Management
 
-## Getting Started
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-First, run the development server:
+**Live Demo:** [https://crm-pro-frontend.vercel.app](https://crm-pro-frontend.vercel.app)  
+**Backend Repo:** [github.com/fathima-azeema/crm-pro-backend](https://github.com/fathima-azeema/crm-pro-backend)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📋 Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+CRM Pro is a modern, full‑stack Customer Relationship Management application built with Next.js, React, Node.js, and Supabase. It streamlines customer management, lead tracking, task organization, and analytics in one intuitive dashboard.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ Key Features
 
-To learn more about Next.js, take a look at the following resources:
+- 🔐 **JWT Authentication** – Register, login, protected routes, role‑based access
+- 👥 **Customer Management** – Full CRUD, search, pagination, notes & follow‑ups
+- 🎯 **Leads Kanban** – Drag‑and‑drop board to move leads through stages
+- ✅ **Tasks Management** – Kanban & list views, priorities, assignments, due dates
+- 📊 **Dashboard Analytics** – Live stats, charts (line, pie, bar), recent activities
+- 📅 **Calendar** – Monthly view with scheduled follow‑ups and tasks
+- 👔 **Employee Management** – Admin panel to manage team members
+- 🌙 **Dark/Light Mode** – Seamless theme switching
+- ⌨️ **Command Palette** – Global search (Ctrl+K) for customers, leads, and tasks
+- 📱 **Fully Responsive** – Works perfectly on desktop, tablet, and mobile
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img width="760" height="312" alt="Image" src="https://github.com/user-attachments/assets/00652d89-ece2-4c58-b5c5-8c04012f9aed" />
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tech Stack
 
-## Deploy on Vercel
+| Frontend | Backend | Database | Tools |
+|----------|---------|----------|-------|
+| Next.js 16 | Node.js + Express | PostgreSQL (Supabase) | TypeScript |
+| React | JWT + bcrypt | | Tailwind CSS |
+| shadcn/ui | REST API | | Recharts |
+| TanStack Query | Knex | | DnD Kit |
+| Framer Motion | | | Lucide Icons |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Live Demo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can try the live application here:  
+➡️ [https://crm-pro-frontend.vercel.app](https://crm-pro-frontend.vercel.app)
+
+**Demo Credentials** (if you add a demo account later):  
+- Email: `demo@crmpro.com`  
+- Password: `Demo@123`
+
+---
+
+## 🏗️ Local Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/fathima-azeema/crm-pro-frontend.git
+   cd crm-pro-frontend
