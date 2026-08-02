@@ -38,27 +38,6 @@ CRM Pro is a modern, full‑stack Customer Relationship Management application b
 | TanStack Query | Knex | | DnD Kit |
 | Framer Motion | | | Lucide Icons |
 
----
-
-## 📸 Screenshots
-
-### Dashboard
-![Dashboard](PASTE_DASHBOARD_IMAGE_URL_HERE)
-
-### Leads Kanban
-![Leads Kanban](PASTE_LEADS_IMAGE_URL_HERE)
-
-### Tasks Board
-![Tasks](PASTE_TASKS_IMAGE_URL_HERE)
-
-### Customer Detail
-![Customer Detail](PASTE_CUSTOMER_IMAGE_URL_HERE)
-
-### Reports
-![Reports](PASTE_REPORTS_IMAGE_URL_HERE)
-
----
-
 ## 🚀 Live Demo
 
 You can try the live application here:  
