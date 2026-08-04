@@ -1,92 +1,101 @@
-# CRM Pro – Full-Stack Customer Relationship Management
+# CRM Pro – Full‑Stack Customer Relationship Management
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-View-3b82f6?style=for-the-badge&logo=vercel&logoColor=white)](https://crm-pro-frontend.vercel.app)
-[![Frontend GitHub](https://img.shields.io/badge/GitHub-Frontend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-frontend)
-[![Backend GitHub](https://img.shields.io/badge/GitHub-Backend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-backend)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/fathima-azeema/)
+[![Frontend Repo](https://img.shields.io/badge/GitHub-Frontend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-frontend)
+[![Backend Repo](https://img.shields.io/badge/GitHub-Backend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-backend)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/fathima-azeema)
 
-A full‑stack, production‑ready CRM built with Next.js, Express, and Supabase. It replaces spreadsheets with a modern workspace – manage customers, leads, tasks, employees, and reports from one beautiful interface.
+A full‑stack, production‑ready CRM built with Next.js, Express, and Supabase.  
+Replace spreadsheets with a modern workspace – manage customers, leads, tasks, employees, and reports from one beautiful interface.  
 
-The application is live and ready to demo. It was designed as a portfolio project to demonstrate end‑to‑end software engineering skills.
+**Live and ready to demo.** Built as a portfolio project to showcase end‑to‑end software engineering.
 
 ---
 
 ## 🚀 Live Demo
 
-**[crm-pro-frontend.vercel.app](https://crm-pro-frontend.vercel.app)**
+**[crm-pro-frontend.vercel.app](https://crm-pro-frontend.vercel.app)**  
 
-**Demo Account**  
-- **Email:** `admin@crm.com`  
-- **Password:** `Admin@123`
+**Demo credentials**  
+- Email: `admin@crm.com`  
+- Password: `Admin@123`  
 
-(*The password may change – please refer to the live site for the current demo credentials*)
+*(If the password has been changed, you can register a new account or check the repo for the latest demo credentials.)*
 
 ---
 
 ## ✨ Highlights
 
-- Drag‑and‑drop Kanban boards for leads and tasks
-- Real‑time dashboard with animated KPI cards and interactive charts
-- Global command palette (`Ctrl + K`) to instantly search customers, leads, and tasks
-- Role‑based authentication (Admin / Sales Executive) with JWT and bcrypt
-- Full customer lifecycle: notes, follow‑ups, and conversion from leads
-- Calendar view showing follow‑ups and task due dates
-- Employee management with search, pagination, and inline CRUD
-- Dark / light theme with system preference detection
-- Responsive layout with collapsible sidebar and micro‑interactions
-- Deployed on Vercel + Render + Supabase (free tier)
+- Drag‑and‑drop **Kanban boards** for leads and tasks
+- **Real‑time dashboard** with animated KPI cards, sparkline charts, and interactive graphs
+- **Global command palette** (`Ctrl+K`) – search customers, leads, and tasks instantly
+- **JWT authentication** with role‑based access (Admin / Sales Executive)
+- **Full customer lifecycle** – notes, follow‑ups, and lead‑to‑customer conversion
+- **Calendar** showing follow‑ups and task deadlines
+- **Employee management** with CRUD, search, and pagination
+- **Dark / light theme** with system‑preference detection
+- **Responsive** layout, collapsible sidebar, and micro‑interactions
+- Deployed on **Vercel + Render + Supabase** (free tier)
 
 ---
 
 ## 📋 Feature Modules
 
-| Section | Content |
-| --- | --- |
-| Authentication | Register, login, JWT, protected routes, change password, update profile |
-| Dashboard | Animated stat cards, sparkline charts, customer growth, leads by status, recent activities, quick actions |
-| Customers | Full CRUD, search, filter, pagination, detail tabs (info, notes, follow‑ups) |
-| Leads | Kanban board with drag‑and‑drop status update, lead source, conversion pipeline |
-| Tasks | Kanban + list view, assignment, priority, due dates, drag‑and‑drop status |
-| Calendar | Monthly grid with follow‑ups and tasks, click‑to‑view events |
-| Reports | Customer growth line chart, leads by status pie chart, tasks by status bar chart |
-| Employees | Table with search, pagination, add/edit/delete dialogs (admin only) |
-| Settings | Profile, password, company name (database persisted), appearance (theme toggle) |
-| Command Palette | Global `⌘K` / `Ctrl+K` search across customers, leads, and tasks |
+| Section          | Content |
+|------------------|---------|
+| Authentication   | Register, login, JWT, protected routes, change password, update profile |
+| Dashboard        | Animated stat cards, sparkline charts, customer growth, leads by status, recent activity, quick actions |
+| Customers        | Full CRUD, search, filter, pagination, detail tabs (info, notes, follow‑ups) |
+| Leads            | Kanban board with drag‑and‑drop status update, lead source, conversion pipeline |
+| Tasks            | Kanban + list view, assignment, priority, due dates, drag‑and‑drop status |
+| Calendar         | Monthly grid with follow‑ups and tasks, click‑to‑view day events |
+| Reports          | Customer growth line chart, leads by status pie chart, tasks by status bar chart |
+| Employees        | Table with search, pagination, add / edit / delete dialogs (admin only) |
+| Settings         | Profile, password, company name (DB‑persisted), appearance (theme toggle) |
+| Command Palette  | Global `Ctrl+K` search across customers, leads, and tasks |
 
 ---
 
 ## 💻 Technology Stack
 
-| Layer | Technologies |
-| --- | --- |
-| **Frontend** | Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, Recharts, dnd‑kit |
-| **Backend** | Node.js, Express.js, Knex.js, JWT, bcrypt |
-| **Database** | Supabase (PostgreSQL) |
-| **State Management** | React Query (TanStack Query), React Context |
-| **Validation** | Zod, React Hook Form |
-| **Deployment** | Vercel (frontend), Render (backend), Supabase (database) |
-| **Version Control** | Git, GitHub |
+| Layer               | Technologies |
+|---------------------|--------------|
+| **Frontend**        | Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, Recharts, dnd‑kit |
+| **Backend**         | Node.js, Express.js, Knex.js, JWT, bcrypt |
+| **Database**        | Supabase (PostgreSQL) |
+| **State management**| React Query (TanStack Query), React Context |
+| **Validation**      | Zod, React Hook Form |
+| **Deployment**      | Vercel (frontend), Render (backend), Supabase (database) |
+| **Version control** | Git, GitHub |
 
 ---
 
 ## 📁 Project Structure
+
+```text
 crm-pro/
-├── client/ # Next.js frontend
-│ ├── src/
-│ │ ├── app/ # App Router pages (dashboard, customers, leads…)
-│ │ ├── components/ # Reusable UI (sidebar, dashboard, kanban, command…)
-│ │ ├── providers/ # Auth, Theme, React Query providers
-│ │ ├── lib/ # API client (Axios), utilities
-│ │ └── hooks/ # Custom hooks
-│ └── public/
+├── client/                    # Next.js frontend
+│   ├── public/
+│   ├── src/
+│   │   ├── app/               # App Router pages (routes)
+│   │   ├── components/        # Reusable UI (sidebar, dashboard, kanban, command…)
+│   │   ├── providers/         # Auth, Theme, React Query providers
+│   │   ├── lib/               # API client (Axios), utilities
+│   │   └── hooks/             # Custom hooks
+│   ├── .env.local
+│   ├── next.config.ts
+│   ├── package.json
+│   └── tsconfig.json
 │
-└── server/ # Express backend
-├── src/
-│ ├── controllers/ # Business logic (auth, customers, leads…)
-│ ├── routes/ # Route definitions
-│ ├── middleware/ # JWT authentication, role checks
-│ └── config/ # Database connection (Knex)
-└── package.json
+└── server/                    # Express backend
+    ├── src/
+    │   ├── controllers/       # Business logic (auth, customers, leads…)
+    │   ├── routes/            # API route definitions
+    │   ├── middleware/        # JWT authentication & role checks
+    │   ├── config/            # Database connection (Knex)
+    │   └── server.js
+    ├── .env
+    └── package.json 
 
 ## 🛠️ Run Locally
 
