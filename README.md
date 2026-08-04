@@ -1,259 +1,185 @@
 # CRM Pro – Full-Stack Customer Relationship Management
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
-![Next.js](https://img.shields.io/badge/Next.js-16-black)
-![React](https://img.shields.io/badge/React-19-61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4-38B2AC)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View-3b82f6?style=for-the-badge&logo=vercel&logoColor=white)](https://crm-pro-frontend.vercel.app)
+[![Frontend GitHub](https://img.shields.io/badge/GitHub-Frontend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-frontend)
+[![Backend GitHub](https://img.shields.io/badge/GitHub-Backend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-backend)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/fathima-azeema/)
 
-**🌐 Live Demo:** https://crm-pro-frontend.vercel.app
+A full‑stack, production‑ready CRM built with Next.js, Express, and Supabase. It replaces spreadsheets with a modern workspace – manage customers, leads, tasks, employees, and reports from one beautiful interface.
 
-**🖥️ Backend Repository:** https://github.com/fathima-azeema/crm-pro-backend
-
----
-
-# 📋 Overview
-
-CRM Pro is a modern full-stack Customer Relationship Management (CRM) application designed to simplify customer interactions, lead tracking, task management, and business analytics.
-
-Built using Next.js, React, Express.js, PostgreSQL (Supabase), and TypeScript, it delivers a fast, scalable, and responsive experience for businesses of any size.
+The application is live and ready to demo. It was designed as a portfolio project to demonstrate end‑to‑end software engineering skills.
 
 ---
 
-# ✨ Features
+## 🚀 Live Demo
 
-## 🔐 Authentication
+**[crm-pro-frontend.vercel.app](https://crm-pro-frontend.vercel.app)**
 
-- JWT Authentication
-- Secure Login & Registration
-- Protected Routes
-- Role-Based Authorization
+**Demo Account**  
+- **Email:** `admin@crm.com`  
+- **Password:** `Admin@123`
 
-## 👥 Customer Management
-
-- Create, Edit & Delete Customers
-- Customer Profiles
-- Search & Filtering
-- Pagination
-- Follow-up Notes
-
-## 🎯 Lead Management
-
-- Kanban Board
-- Drag & Drop
-- Multiple Lead Stages
-- Lead Details
-- Status Tracking
-
-## ✅ Task Management
-
-- Kanban View
-- List View
-- Due Dates
-- Priorities
-- Assign Tasks
-- Status Updates
-
-## 📊 Dashboard
-
-- Revenue Statistics
-- Customer Statistics
-- Leads Overview
-- Charts
-- Recent Activities
-- Quick Actions
-
-## 📅 Calendar
-
-- Monthly Calendar
-- Follow-up Scheduling
-- Task Scheduling
-
-## 👨‍💼 Employee Management
-
-- Employee CRUD
-- Team Management
-- Role Management
-
-## 🌙 User Experience
-
-- Dark Mode
-- Light Mode
-- Command Palette (Ctrl + K)
-- Responsive Design
-- Smooth Animations
+(*The password may change – please refer to the live site for the current demo credentials*)
 
 ---
 
-# 📷 Screenshots
+## ✨ Highlights
 
-> Replace these with your own screenshots.
-
-![Dashboard](https://github.com/user-attachments/assets/00652d89-ece2-4c58-b5c5-8c04012f9aed)
-
----
-
-# 🛠 Tech Stack
-
-| Category | Technologies |
-|-----------|-------------|
-| Frontend | Next.js 16, React 19 |
-| Backend | Node.js, Express.js |
-| Database | PostgreSQL (Supabase) |
-| Language | TypeScript |
-| Styling | Tailwind CSS |
-| UI Library | shadcn/ui |
-| State Management | TanStack Query |
-| Charts | Recharts |
-| Authentication | JWT |
-| Password Security | bcrypt |
-| Database ORM | Knex.js |
-| Animations | Framer Motion |
-| Icons | Lucide React |
-| Drag & Drop | DnD Kit |
+- Drag‑and‑drop Kanban boards for leads and tasks
+- Real‑time dashboard with animated KPI cards and interactive charts
+- Global command palette (`Ctrl + K`) to instantly search customers, leads, and tasks
+- Role‑based authentication (Admin / Sales Executive) with JWT and bcrypt
+- Full customer lifecycle: notes, follow‑ups, and conversion from leads
+- Calendar view showing follow‑ups and task due dates
+- Employee management with search, pagination, and inline CRUD
+- Dark / light theme with system preference detection
+- Responsive layout with collapsible sidebar and micro‑interactions
+- Deployed on Vercel + Render + Supabase (free tier)
 
 ---
 
-# 🚀 Live Demo
+## 📋 Feature Modules
 
-https://crm-pro-frontend.vercel.app
+| Section | Content |
+| --- | --- |
+| Authentication | Register, login, JWT, protected routes, change password, update profile |
+| Dashboard | Animated stat cards, sparkline charts, customer growth, leads by status, recent activities, quick actions |
+| Customers | Full CRUD, search, filter, pagination, detail tabs (info, notes, follow‑ups) |
+| Leads | Kanban board with drag‑and‑drop status update, lead source, conversion pipeline |
+| Tasks | Kanban + list view, assignment, priority, due dates, drag‑and‑drop status |
+| Calendar | Monthly grid with follow‑ups and tasks, click‑to‑view events |
+| Reports | Customer growth line chart, leads by status pie chart, tasks by status bar chart |
+| Employees | Table with search, pagination, add/edit/delete dialogs (admin only) |
+| Settings | Profile, password, company name (database persisted), appearance (theme toggle) |
+| Command Palette | Global `⌘K` / `Ctrl+K` search across customers, leads, and tasks |
 
 ---
 
-# ⚙️ Installation
+## 💻 Technology Stack
 
-## Clone the repository
+| Layer | Technologies |
+| --- | --- |
+| **Frontend** | Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, Recharts, dnd‑kit |
+| **Backend** | Node.js, Express.js, Knex.js, JWT, bcrypt |
+| **Database** | Supabase (PostgreSQL) |
+| **State Management** | React Query (TanStack Query), React Context |
+| **Validation** | Zod, React Hook Form |
+| **Deployment** | Vercel (frontend), Render (backend), Supabase (database) |
+| **Version Control** | Git, GitHub |
+
+---
+
+## 📁 Project Structure
+crm-pro/
+├── client/ # Next.js frontend
+│ ├── src/
+│ │ ├── app/ # App Router pages (dashboard, customers, leads…)
+│ │ ├── components/ # Reusable UI (sidebar, dashboard, kanban, command…)
+│ │ ├── providers/ # Auth, Theme, React Query providers
+│ │ ├── lib/ # API client (Axios), utilities
+│ │ └── hooks/ # Custom hooks
+│ └── public/
+│
+└── server/ # Express backend
+├── src/
+│ ├── controllers/ # Business logic (auth, customers, leads…)
+│ ├── routes/ # Route definitions
+│ ├── middleware/ # JWT authentication, role checks
+│ └── config/ # Database connection (Knex)
+└── package.json
+
+---
+
+## 🛠️ Run Locally
+
+### 1. Clone the repositories
 
 ```bash
 git clone https://github.com/fathima-azeema/crm-pro-frontend.git
-cd crm-pro-frontend
-```
-
-## Install dependencies
-
-```bash
-npm install
-```
-
-## Configure environment variables
-
-Create a `.env.local` file:
-
-```env
-NEXT_PUBLIC_API_URL=http://localhost:5000
-```
-
-## Start the development server
-
-```bash
-npm run dev
-```
-
-Open:
-
-```
-http://localhost:3000
-```
-
----
-
-# 🖥 Backend Setup
-
-Clone the backend repository.
-
-```bash
 git clone https://github.com/fathima-azeema/crm-pro-backend.git
-```
 
-Install packages.
-
-```bash
+2. Backend setup
+cd crm-pro-backend
 npm install
-```
 
-Run the backend.
+env
+PORT=5000
+DATABASE_URL=your_supabase_session_pooler_url
+JWT_SECRET=your_jwt_secret
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVICE_KEY=your_service_role_key
+Start the server:
 
-```bash
+bash
 npm run dev
-```
+The API will be available at http://localhost:5000.
 
----
+3. Frontend setup
+bash
+cd ../crm-pro-frontend
+npm install
+Create a .env.local file in the client folder with:
 
-# 📁 Project Structure
+env
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
+Start the development server:
 
-```
-crm-pro-frontend
-│
-├── app
-├── components
-├── hooks
-├── lib
-├── services
-├── styles
-├── public
-├── types
-├── utils
-└── README.md
-```
+bash
+npm run dev
+Open http://localhost:3000.
 
----
+🌍 Deployment
+The application is already deployed, but you can deploy your own instance.
 
-# 📱 Responsive
+Frontend (Vercel)
+Push the crm-pro-frontend repo to GitHub.
 
-- Desktop
-- Laptop
-- Tablet
-- Mobile
+Import the project on Vercel.
 
----
+Set the environment variable NEXT_PUBLIC_API_URL to your backend URL (e.g., https://your-api.onrender.com/api).
 
-# 🔒 Security
+Deploy – Vercel will automatically build and serve your app.
 
-- JWT Authentication
-- Password Encryption (bcrypt)
-- Protected API Routes
-- Role-Based Access Control
+Backend (Render)
+Push the crm-pro-backend repo to GitHub.
 
----
+Create a new Web Service on Render.
 
-# 📈 Future Improvements
+Set the Start Command to node src/server.js.
 
-- Email Notifications
-- SMS Integration
-- File Uploads
-- Customer Timeline
-- AI Assistant
-- Sales Forecasting
-- Reports Export (PDF & Excel)
-- Multi-language Support
+Add the same environment variables as in your local .env.
 
----
+Deploy – after a few minutes your API will be live.
 
-# 🤝 Contributing
+Database (Supabase)
+The database is already hosted on Supabase.
 
-Contributions are welcome.
+Use the Session pooler connection string for Render (IPv4 compatibility).
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push your branch
-5. Open a Pull Request
+Run the provided SQL script to create all necessary tables.
 
----
+🔐 Environment Variables
+Backend (server/.env)
+Variable	Description
+PORT	Server port (Render assigns its own)
+DATABASE_URL	Supabase PostgreSQL connection string (session pooler)
+JWT_SECRET	Secret key for signing JWT tokens
+SUPABASE_URL	Your Supabase project URL
+SUPABASE_SERVICE_KEY	Supabase service role key
+Frontend (client/.env.local)
+Variable	Description
+NEXT_PUBLIC_API_URL	Base URL of the backend API (e.g., https://your-api.onrender.com/api)
+📝 Customize
+Branding: Replace the “CP” logo in components/layouts/sidebar.tsx with your own.
 
-# 📄 License
+Company Name: Change the company name in the settings page (it reads from the settings table).
 
-This project is licensed under the MIT License.
+Demo Data: Seed the database with your own sample customers, leads, and tasks.
 
----
+UI Theme: The theme uses shadcn/ui design tokens – you can customise colours in globals.css.
 
-# 👩‍💻 Author
+📄 License
+This project is open source under the MIT License.
 
-**Fathima Azeema**
-
-- GitHub: https://github.com/fathima-azeema
-- LinkedIn: https://www.linkedin.com/in/fathima-azeema
-
----
-
-⭐ If you like this project, don't forget to give it a Star!
+🙌 Credits
+Designed, developed, and deployed by Fathima Azeema.
