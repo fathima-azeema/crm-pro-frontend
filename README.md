@@ -88,13 +88,11 @@ crm-pro/
 │ └── config/ # Database connection (Knex)
 └── package.json
 
----
-
 ## 🛠️ Run Locally
 
 ### 1. Clone the repositories
 
-```bash
+
 git clone https://github.com/fathima-azeema/crm-pro-frontend.git
 git clone https://github.com/fathima-azeema/crm-pro-backend.git
 
