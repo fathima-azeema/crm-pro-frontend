@@ -1,192 +1,327 @@
-# CRM Pro – Full‑Stack Customer Relationship Management
+# CRM Pro — Full-Stack Customer Relationship Management System
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-View-3b82f6?style=for-the-badge&logo=vercel&logoColor=white)](https://crm-pro-frontend.vercel.app)
-[![Frontend Repo](https://img.shields.io/badge/GitHub-Frontend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-frontend)
-[![Backend Repo](https://img.shields.io/badge/GitHub-Backend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-backend)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/fathima-azeema)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View-3B82F6?style=for-the-badge&logo=vercel&logoColor=white)](https://crm-pro-frontend.vercel.app)
+[![Frontend Repository](https://img.shields.io/badge/GitHub-Frontend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-frontend)
+[![Backend Repository](https://img.shields.io/badge/GitHub-Backend-181717?style=for-the-badge&logo=github)](https://github.com/fathima-azeema/crm-pro-backend)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fathima_Azeema-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/fathima-azeema)
 
-A full‑stack, production‑ready CRM built with Next.js, Express, and Supabase.  
-Replace spreadsheets with a modern workspace – manage customers, leads, tasks, employees, and reports from one beautiful interface.  
+A modern, production-ready Customer Relationship Management (CRM) platform built with **Next.js**, **Express.js**, and **Supabase PostgreSQL**. CRM Pro enables businesses to manage customers, leads, employees, tasks, reports, and business activities from a single responsive dashboard.
 
-**Live and ready to demo.** Built as a portfolio project to showcase end‑to‑end software engineering.
-
----
-
-## 🚀 Live Demo
-
-**[crm-pro-frontend.vercel.app](https://crm-pro-frontend.vercel.app)**  
-
-**Demo credentials**  
-- Email: `admin@crm.com`  
-- Password: `Admin@123`  
-
-*(If the password has been changed, you can register a new account or check the repo for the latest demo credentials.)*
+The application is built using modern web technologies with a scalable frontend-backend architecture and demonstrates full-stack software engineering, authentication, database management, REST API development, and responsive UI design.
 
 ---
 
-## ✨ Highlights
+## 🌐 Live Demo
 
-- Drag‑and‑drop **Kanban boards** for leads and tasks
-- **Real‑time dashboard** with animated KPI cards, sparkline charts, and interactive graphs
-- **Global command palette** (`Ctrl+K`) – search customers, leads, and tasks instantly
-- **JWT authentication** with role‑based access (Admin / Sales Executive)
-- **Full customer lifecycle** – notes, follow‑ups, and lead‑to‑customer conversion
-- **Calendar** showing follow‑ups and task deadlines
-- **Employee management** with CRUD, search, and pagination
-- **Dark / light theme** with system‑preference detection
-- **Responsive** layout, collapsible sidebar, and micro‑interactions
-- Deployed on **Vercel + Render + Supabase** (free tier)
+**https://crm-pro-frontend.vercel.app**
 
----
+### Demo Account
 
-## 📋 Feature Modules
+**Email:** `admin@crm.com`
 
-| Section          | Content |
-|------------------|---------|
-| Authentication   | Register, login, JWT, protected routes, change password, update profile |
-| Dashboard        | Animated stat cards, sparkline charts, customer growth, leads by status, recent activity, quick actions |
-| Customers        | Full CRUD, search, filter, pagination, detail tabs (info, notes, follow‑ups) |
-| Leads            | Kanban board with drag‑and‑drop status update, lead source, conversion pipeline |
-| Tasks            | Kanban + list view, assignment, priority, due dates, drag‑and‑drop status |
-| Calendar         | Monthly grid with follow‑ups and tasks, click‑to‑view day events |
-| Reports          | Customer growth line chart, leads by status pie chart, tasks by status bar chart |
-| Employees        | Table with search, pagination, add / edit / delete dialogs (admin only) |
-| Settings         | Profile, password, company name (DB‑persisted), appearance (theme toggle) |
-| Command Palette  | Global `Ctrl+K` search across customers, leads, and tasks |
+**Password:** `Admin@123`
+
+> If the password has changed, create a new account or update the demo credentials from the repository.
 
 ---
 
-## 💻 Technology Stack
+# ✨ Highlights
 
-| Layer               | Technologies |
-|---------------------|--------------|
-| **Frontend**        | Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, Recharts, dnd‑kit |
-| **Backend**         | Node.js, Express.js, Knex.js, JWT, bcrypt |
-| **Database**        | Supabase (PostgreSQL) |
-| **State management**| React Query (TanStack Query), React Context |
-| **Validation**      | Zod, React Hook Form |
-| **Deployment**      | Vercel (frontend), Render (backend), Supabase (database) |
-| **Version control** | Git, GitHub |
+- JWT Authentication with secure login and registration
+- Role-based access control (Admin & Sales Executive)
+- Interactive analytics dashboard with KPI cards and charts
+- Drag-and-drop Kanban boards for Leads and Tasks
+- Customer management with notes and follow-ups
+- Lead conversion workflow
+- Employee management module
+- Calendar with task and follow-up scheduling
+- Global Command Palette (`Ctrl + K`)
+- Dark & Light themes with persistent preferences
+- Responsive desktop, tablet, and mobile layouts
+- Built using Next.js App Router and Express REST API
+- PostgreSQL database powered by Supabase
+- Deployed using Vercel, Render, and Supabase
 
 ---
 
-## 📁 Project Structure
+# 📋 Feature Modules
+
+| Module | Description |
+|---------|-------------|
+| Authentication | Register, Login, JWT Authentication, Protected Routes, Profile Update, Password Change |
+| Dashboard | KPI Cards, Customer Growth, Sales Charts, Recent Activity, Quick Actions |
+| Customers | Create, Read, Update, Delete, Search, Filter, Pagination, Notes & Follow-ups |
+| Leads | Kanban Board, Drag & Drop Status Updates, Lead Sources, Conversion Pipeline |
+| Tasks | Kanban View, List View, Priority Levels, Due Dates, Assignment |
+| Calendar | Monthly Calendar with Tasks and Follow-ups |
+| Reports | Customer Growth, Lead Status, Task Analytics |
+| Employees | Employee CRUD, Search, Pagination (Admin Only) |
+| Settings | Company Information, User Profile, Theme Settings |
+| Command Palette | Global Search using `Ctrl + K` |
+
+---
+
+# 💻 Technology Stack
+
+### Frontend
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- Recharts
+- dnd-kit
+- React Hook Form
+- Zod
+- TanStack React Query
+
+### Backend
+
+- Node.js
+- Express.js
+- Knex.js
+- JWT Authentication
+- bcrypt
+
+### Database
+
+- Supabase PostgreSQL
+
+### Deployment
+
+- Vercel (Frontend)
+- Render (Backend)
+- Supabase (Database)
+
+### Tools
+
+- Git
+- GitHub
+- VS Code
+- Postman
+
+---
+
+# 📁 Project Structure
 
 ```text
 crm-pro/
-├── client/                    # Next.js frontend
+├── client/
 │   ├── public/
 │   ├── src/
-│   │   ├── app/               # App Router pages (routes)
-│   │   ├── components/        # Reusable UI (sidebar, dashboard, kanban, command…)
-│   │   ├── providers/         # Auth, Theme, React Query providers
-│   │   ├── lib/               # API client (Axios), utilities
-│   │   └── hooks/             # Custom hooks
-│   ├── .env.local
-│   ├── next.config.ts
+│   │   ├── app/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   ├── providers/
+│   │   └── styles/
 │   ├── package.json
-│   └── tsconfig.json
+│   └── next.config.ts
 │
-└── server/                    # Express backend
+└── server/
     ├── src/
-    │   ├── controllers/       # Business logic (auth, customers, leads…)
-    │   ├── routes/            # API route definitions
-    │   ├── middleware/        # JWT authentication & role checks
-    │   ├── config/            # Database connection (Knex)
+    │   ├── config/
+    │   ├── controllers/
+    │   ├── middleware/
+    │   ├── routes/
+    │   ├── services/
     │   └── server.js
-    ├── .env
-    └── package.json 
+    └── package.json
+```
 
-## 🛠️ Run Locally
+---
 
-### 1. Clone the repositories
+# 🚀 Run Locally
 
+## 1. Clone the repositories
 
+```bash
 git clone https://github.com/fathima-azeema/crm-pro-frontend.git
 git clone https://github.com/fathima-azeema/crm-pro-backend.git
+```
 
-2. Backend setup
+---
+
+## 2. Backend Setup
+
+```bash
 cd crm-pro-backend
 npm install
+```
 
-env
+Create a `.env` file.
+
+```env
 PORT=5000
+
 DATABASE_URL=your_supabase_session_pooler_url
+
 JWT_SECRET=your_jwt_secret
+
 SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_SERVICE_KEY=your_service_role_key
-Start the server:
 
-bash
+SUPABASE_SERVICE_KEY=your_supabase_service_role_key
+```
+
+Start the backend server.
+
+```bash
 npm run dev
-The API will be available at http://localhost:5000.
+```
 
-3. Frontend setup
-bash
+Backend runs on:
+
+```
+http://localhost:5000
+```
+
+---
+
+## 3. Frontend Setup
+
+```bash
 cd ../crm-pro-frontend
 npm install
-Create a .env.local file in the client folder with:
+```
 
-env
+Create a `.env.local` file.
+
+```env
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
-Start the development server:
+```
 
-bash
+Start the frontend.
+
+```bash
 npm run dev
-Open http://localhost:3000.
+```
 
-🌍 Deployment
-The application is already deployed, but you can deploy your own instance.
+Open
 
-Frontend (Vercel)
-Push the crm-pro-frontend repo to GitHub.
+```
+http://localhost:3000
+```
 
-Import the project on Vercel.
+---
 
-Set the environment variable NEXT_PUBLIC_API_URL to your backend URL (e.g., https://your-api.onrender.com/api).
+# 🌍 Deployment
 
-Deploy – Vercel will automatically build and serve your app.
+## Frontend (Vercel)
 
-Backend (Render)
-Push the crm-pro-backend repo to GitHub.
+1. Push the frontend repository to GitHub.
+2. Import the repository into Vercel.
+3. Configure:
 
-Create a new Web Service on Render.
+```env
+NEXT_PUBLIC_API_URL=https://your-api.onrender.com/api
+```
 
-Set the Start Command to node src/server.js.
+4. Deploy.
 
-Add the same environment variables as in your local .env.
+---
 
-Deploy – after a few minutes your API will be live.
+## Backend (Render)
 
-Database (Supabase)
-The database is already hosted on Supabase.
+1. Push the backend repository to GitHub.
+2. Create a new Render Web Service.
+3. Set the start command.
 
-Use the Session pooler connection string for Render (IPv4 compatibility).
+```bash
+node src/server.js
+```
 
-Run the provided SQL script to create all necessary tables.
+4. Add all backend environment variables.
+5. Deploy.
 
-🔐 Environment Variables
-Backend (server/.env)
-Variable	Description
-PORT	Server port (Render assigns its own)
-DATABASE_URL	Supabase PostgreSQL connection string (session pooler)
-JWT_SECRET	Secret key for signing JWT tokens
-SUPABASE_URL	Your Supabase project URL
-SUPABASE_SERVICE_KEY	Supabase service role key
-Frontend (client/.env.local)
-Variable	Description
-NEXT_PUBLIC_API_URL	Base URL of the backend API (e.g., https://your-api.onrender.com/api)
-📝 Customize
-Branding: Replace the “CP” logo in components/layouts/sidebar.tsx with your own.
+---
 
-Company Name: Change the company name in the settings page (it reads from the settings table).
+## Database (Supabase)
 
-Demo Data: Seed the database with your own sample customers, leads, and tasks.
+- Create a Supabase PostgreSQL project.
+- Use the Session Pooler connection string.
+- Run the SQL migration scripts.
+- Configure the connection string in Render.
 
-UI Theme: The theme uses shadcn/ui design tokens – you can customise colours in globals.css.
+---
 
-📄 License
-This project is open source under the MIT License.
+# 🔐 Environment Variables
 
-🙌 Credits
-Designed, developed, and deployed by Fathima Azeema.
+## Backend (`.env`)
+
+| Variable | Description |
+|----------|-------------|
+| PORT | Backend server port |
+| DATABASE_URL | Supabase PostgreSQL Session Pooler URL |
+| JWT_SECRET | Secret used for JWT authentication |
+| SUPABASE_URL | Supabase project URL |
+| SUPABASE_SERVICE_KEY | Supabase Service Role Key |
+
+---
+
+## Frontend (`.env.local`)
+
+| Variable | Description |
+|----------|-------------|
+| NEXT_PUBLIC_API_URL | Backend API URL |
+
+---
+
+# 🛠 Customization
+
+### Branding
+
+Replace the CRM logo located in:
+
+```
+components/layouts/sidebar.tsx
+```
+
+---
+
+### Company Information
+
+Update company details from the **Settings** module.
+
+---
+
+### Sample Data
+
+Populate the database with your own:
+
+- Customers
+- Leads
+- Tasks
+- Employees
+
+---
+
+### Theme
+
+Customize colors inside:
+
+```
+globals.css
+```
+
+using Tailwind and shadcn/ui design tokens.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👩‍💻 Developer
+
+Designed, developed, and deployed by **Fathima Azeema**
+
+- GitHub: https://github.com/fathima-azeema
+- LinkedIn: https://linkedin.com/in/fathima-azeema
+
+---
+
+⭐ If you found this project helpful, consider giving the repositories a star.
